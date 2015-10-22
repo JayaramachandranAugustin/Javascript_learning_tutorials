@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Adding the method in object</title>
+	<script type="text/javascript">
+	function car(name,speed){
+		this.name=name;
+		this.speed=speed;
+		//one way of adding method in object
+		this.convertToKmph=function(){
+			return this.speed*1.6;
+		}
+		//this is another way adding method in the object
+		this.nitrousPresent=checkNitrous;
+	}
+		function checkNitrous(){
+			var isPresent=false;
+			switch (this.name){
+				case "Ferrari":
+				isPresent=true;
+				break;
+				case "Lamborgini":
+				isPresent=true;
+				break;
+				default:
+				isPresent=false;
+			}
+			return isPresent;
+		}
+		var ferrari=new car("Ferrari",300);
+		var lamborgini=new car("Lamborgini",300);
+		var ford=new car("Ford",300);
+
+		document.write(ferrari.speed);
+		document.write(ferrari.convertToKmph());
+		document.write(ferrari.nitrousPresent());
+		document.write(ford.nitrousPresent());
+	
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

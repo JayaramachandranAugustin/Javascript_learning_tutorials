@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Date Objects</title>
+	<script type="text/javascript">
+	function print(){
+		var todayDate=new Date();
+		var hours=todayDate.getHours();
+		var minutes=todayDate.getMinutes();
+		var seconds=todayDate.getSeconds();
+		document.write(todayDate+ "Time "+hours+":"+minutes+":"+seconds+" <br/>")
+	}
+	setInterval("print()",1000);
+	</script>
+</head>
+
+<body>
+	
+</body>
+</html>

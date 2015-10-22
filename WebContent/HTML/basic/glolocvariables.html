@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Global and local variables</title>
+</head>
+<body>
+	<script type="text/javascript">
+	var player="Steve Waugh";
+
+	function method1(){
+		document.write(player+"<br />");
+	}
+	function method2(){
+		//local variable
+		var keeper="Gilchrist";
+		//We are overriding the global varible with local varible
+		var player="Ricky Ponting";
+		document.write(player+"<br />");
+	}
+	function method3(){
+		//here the keeper wont be displayed because it is local variable of method3
+		document.write(keeper+"<br />");
+	}
+	function method4(){
+		//this way we can create a global variable inside function
+		legend="bradman";
+	}
+	function method5(){
+		//this way we can create a global variable inside 
+		document.write(legend+"<br />");
+	}
+	method1();
+	method2();
+	method4();
+	method5();
+	//Will result in error since keeper is local variable
+	method3();
+	</script>
+</body>
+</html>

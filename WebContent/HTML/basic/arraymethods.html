@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>List of array methods</title>
+	<script type="text/javascript">
+	var batsman=new Array("Burns","Finch","Smith","Bailey");
+	var bowler=new Array("Hastings","Starc","Cummins","Agar");
+	var team=batsman.concat(bowler);
+	document.write("concat function is used to concate two arrays "+team.length+" and the elements in the array are"+team+"<br />");
+	document.write(team.join(" ")+"<br />");
+
+	var fullString="Hi! How are you ?"
+	var arr_fullString=fullString.split(" ");
+	document.write(arr_fullString[4]+" the array length is "+arr_fullString.length+"<br />");
+	document.write(arr_fullString.pop()+" after the pop method the array length is "+arr_fullString.length+"<br />");
+	document.write(team.reverse()+"<br />");
+	batsman.push(bowler);
+	document.write(batsman+"<br />");
+	var prompt_var=prompt("Enter the Name","David");
+	document.write("Welcome "+prompt_var);
+	</script>
+</head>
+<body>
+
+	
+</body>
+</html>

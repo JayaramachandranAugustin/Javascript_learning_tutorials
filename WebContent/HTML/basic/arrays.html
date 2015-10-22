@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Arrays in javascript</title>
+	<script type="text/javascript">
+	//There are three ways to create arrays they are
+	//First way :  The elements are inserted into the array when initialization
+	var players=new Array("Adam Gilchrist","Ricky Ponting","Michael Clarke","Phil Hughes","Brett Lee","Glenn Mgrath");
+
+	document.write("Best Captain in the world \""+players[1]+"\"<br />");
+	//Second way :  The size of the array is declared first and the elements are inserted later
+	var footballPlayers=new Array(4);
+	footballPlayers[0]="Lionel Messi";
+	footballPlayers[1]="Andres Iniesta";
+	footballPlayers[2]="zinadane zidane";
+	footballPlayers[3]="Neymar";
+
+	document.write(footballPlayers[0]+" is the best player in world<br />");
+
+	//Third way : No need to declare the size of the array can insert any number of elements later
+	var games=new Array();
+	games[0]="cricket";
+	games[1]="Football";
+	games[2]="kabadi";
+	games[3]="Hockey";
+	games[4]="swimming";
+
+	document.write(games[1]+" has lot of fan followers all over the world");
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
